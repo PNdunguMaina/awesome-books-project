@@ -43,7 +43,7 @@ h1 {
   background-color: white;
 }
 
-.books-list {
+#books-list {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -51,11 +51,20 @@ h1 {
   width: 100%;
 }
 
-.form-control {
-  height: 40px;
+#list-form {
+  height: 100vh;
 }
 
-.books-list button {
+.form-control {
+  height: 60px;
+  font-size: 2rem;
+}
+
+input::placeholder {
+  font-size: 2rem;
+}
+
+#books-list button {
   width: 80px;
   height: 30px;
   border: 3px solid #1a1a1a;
@@ -79,6 +88,7 @@ h1 {
   display: flex;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .form-group {
@@ -95,7 +105,8 @@ h1 {
   display: flex;
   gap: 10px;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 2rem;
+  font-weight: 600;
   padding: 1rem;
   position: absolute;
 }
@@ -158,6 +169,17 @@ h1 {
   border-right: 1px solid black;
 }
 
+#home-page {
+  color: rgb(235, 240, 245);
+  font-size: 5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  transform: translateY(-50%);
+}
+
 #contact-us {
   display: flex;
   justify-content: center;
@@ -198,6 +220,8 @@ footer h3 {
   font-weight: 600;
 }
 
-.list-form {
+#contact-us,
+#list-form,
+#books-list {
   display: none;
 }
